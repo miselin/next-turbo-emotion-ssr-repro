@@ -1,4 +1,14 @@
-/** Add your relevant code here for the issue to reproduce */
+import { css } from '@emotion/react';
+
+const emotionStyles = css([
+  {
+    position: 'fixed',
+    top: 300,
+    left: 300,
+    opacity: 100,
+  },
+]);
+
 export default function Home() {
-  return null
+  return <div css={emotionStyles}><h1>Hello</h1></div>
 }
